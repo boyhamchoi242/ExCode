@@ -1,0 +1,19 @@
+def FashioninBerland(n, b):
+    if n == 1:
+        if b[0]==1:
+            print('YES')
+        else: 
+            print('NO')
+    else:
+        sd = 0
+        for x in b :
+            if x == 0:
+                sd+=1
+        if sd == 1:
+            print('YES')
+        else:
+            print('NO')
+
+n = int(input())
+b = list(map(int, input().split()))
+FashioninBerland(n, b)
